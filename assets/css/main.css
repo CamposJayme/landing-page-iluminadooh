@@ -1,0 +1,48 @@
+@import url('reset.css');
+
+/* Header (Cabeçalho) */
+.header {
+    background-color: #000;
+    color: #fff;
+}
+
+.header-holder {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-logo span {
+    color: #0095ff;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-utils button {
+    margin-left: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.cadastrar-btn {
+    padding: 10px 20px;
+}
+
+.cliente-btn {
+    background-color: #003fde;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}

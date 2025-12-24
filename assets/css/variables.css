@@ -1,0 +1,10 @@
+/* Variáveis */
+:root {
+    --primary-color: #000;
+    --secondary-color: #0095ff;
+    --accent-color: #003fde;
+    --text-color: #fff;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-weight-normal: 500;
+}
