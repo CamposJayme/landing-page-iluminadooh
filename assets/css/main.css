@@ -1,68 +1,128 @@
-@import url('reset.css');
-
-div#root {
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-    background-color: #000;
+/* CONTAINER PADRÃO */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Header (Cabeçalho) */
-.header-holder {
-    max-width: 1320px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
+/* HEADER */
+.header {
+  padding: 20px 0;
 }
 
-.header-logo {
-    font-size: 24px;
-    font-weight: bold;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header-logo span {
-    color: #0095ff;
+.logo span {
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
-.header-nav ul {
-    display: flex;
-    gap: 20px;
+.logo strong {
+  color: #1e90ff;
+  margin-left: 4px;
 }
 
-.header-utils button {
-    margin-left: 10px;
-    border: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
+.nav {
+  display: flex;
+  gap: 24px;
 }
 
-.cadastrar-btn {
-    padding: 10px 20px;
+.nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
 }
 
-.cliente-btn {
-    background-color: #003fde;
-    padding: 10px 30px;
-    border-radius: 6px;
-    cursor: pointer;
+.nav a:hover {
+  color: #fff;
 }
 
-/* MAIN */
-.main {
-    background-color: #000;
-    padding: 60px 0;
-    max-width: 1320px;
-    margin: 0 auto;
+/* BOTÕES */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.main-intro {
-    color: #fff;
-    display: flex;
+.btn-primary {
+  background: #1e90ff;
+  color: #fff;
 }
 
-.main-intro-advertising,
-.main-intro-slogan {
-    width: 50%;
+.btn-primary:hover {
+  background: #1877d5;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  opacity: 0.85;
+}
+
+/* HERO */
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* TEXTO */
+.hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.hero-actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+/* CARD DIREITA */
+.hero-card {
+  background: linear-gradient(145deg, #111, #000);
+  border: 1px solid #333;
+  padding: 40px 50px;
+  border-radius: 16px;
+  max-width: 360px;
+}
+
+.hero-card p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  color: #ddd;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
 }
