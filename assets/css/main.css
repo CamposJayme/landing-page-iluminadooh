@@ -126,3 +126,169 @@
     justify-content: center;
   }
 }
+
+/* ===========================
+   ABOUT DOOH
+=========================== */
+
+.about-dooh {
+  padding: 120px 0 80px;
+  border-top: 1px solid #222;
+}
+
+.about-dooh h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.about-dooh p {
+  max-width: 900px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* ===========================
+   HOW IT WORKS
+=========================== */
+
+.how-it-works {
+  padding: 100px 0 120px;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.step {
+  text-align: center;
+  color: #ddd;
+}
+
+.step .icon {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background: linear-gradient(145deg, #111, #000);
+}
+
+.step p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width: 900px) {
+  .about-dooh h2,
+  .how-it-works h2 {
+    font-size: 2.2rem;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================
+   VALUES / MISSÃO / VISÃO
+=========================== */
+
+.values {
+  padding: 120px 0;
+  border-top: 1px solid #222;
+}
+
+.values-text {
+  max-width: 900px;
+}
+
+.value-item + .value-item {
+  margin-top: 64px;
+}
+
+.values h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.values p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.values-features {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature .icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 1px solid #333;
+  background: linear-gradient(145deg, #111, #000);
+}
+
+.feature span {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+@media (max-width: 900px) {
+  .values h2 {
+    font-size: 2.2rem;
+  }
+
+  .values-features {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
