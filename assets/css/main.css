@@ -292,3 +292,68 @@
   }
 }
 
+/* ===========================
+   PRICING
+=========================== */
+
+.pricing {
+  text-align: center;
+}
+
+.pricing h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(180deg, #1a1a1a, #0d0d0d);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 260px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.period {
+  display: block;
+  margin-bottom: 2rem;
+  color: #b3b3b3;
+}
+
+button {
+  background: linear-gradient(180deg, #3b82f6, #2563eb);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.2rem;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(180deg, #2563eb, #1d4ed8);
+  transform: scale(1.03);
+}
