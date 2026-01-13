@@ -9,17 +9,31 @@
   </head>
   <body>
     <header class="header">
+      <div class="menu-overlay"></div>
+
       <div class="container header-content">
-        <div class="logo"><span>ILUMINA</span><strong>DOOH</strong></div>
+        <div class="logo">
+          <strong>ILUMINA<span>DOOH</span></strong>
+        </div>
 
         <nav class="nav">
-          <a href="#">Como funciona</a>
+          <a href="#how-it-works">Como funciona</a>
           <a href="#">Planos</a>
           <a href="#">Sobre nós</a>
           <a href="#">Contato</a>
         </nav>
 
-        <a href="#" class="btn btn-primary">Área do Cliente</a>
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="#" class="btn btn-primary desktop-only">Área do Cliente</a>
       </div>
     </header>
 
@@ -45,7 +59,7 @@
         </div>
       </section>
 
-      <section class="about-dooh">
+      <section class="about-dooh" id="about-dooh">
         <div class="container">
           <h2>O que é Mídia DOOH?</h2>
 
@@ -61,7 +75,7 @@
         </div>
       </section>
 
-      <section class="how-it-works">
+      <section class="how-it-works" id="how-it-works">
         <div class="container">
           <h2>Como funciona</h2>
 
@@ -85,6 +99,10 @@
               <div class="icon">📈</div>
               <p>Você acompanha<br />o impacto</p>
             </div>
+          </div>
+
+          <div class="how-it-works-action">
+            <a href="#" class="btn btn-secondary">Começar agora</a>
           </div>
         </div>
       </section>
@@ -163,6 +181,62 @@
             <span class="period">/mês</span>
             <button>Assinar agora</button>
           </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container contact-content">
+          <div class="contact-text">
+            <h2>Fale com a gente</h2>
+            <p>
+              Tem dúvidas, quer anunciar ou se tornar parceiro? Preencha o
+              formulário ou entre em contato conosco.
+            </p>
+
+            <div class="contact-info">
+              <p><strong>Email:</strong> contato@iluminadooh.com.br</p>
+              <p><strong>Telefone:</strong> (11) 99999-9999</p>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Seu nome"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Seu e-mail"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Escreva sua mensagem"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Enviar mensagem
+            </button>
+          </form>
         </div>
       </section>
     </main>
