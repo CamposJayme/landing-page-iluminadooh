@@ -1,3 +1,9 @@
+@import url("animations.css");
+
+.main {
+  margin-top: 70px;
+}
+
 /* CONTAINER PADRÃO */
 .container {
   width: 90%;
@@ -7,7 +13,12 @@
 
 /* HEADER */
 .header {
-  padding: 20px 0;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #000;
 }
 
 .header-content {
@@ -67,7 +78,7 @@
 }
 
 /* NAV MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .nav,
   .desktop-only {
     display: none !important;
@@ -175,7 +186,7 @@
 }
 
 /* RESPONSIVO */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -186,6 +197,13 @@
   }
 
   .hero-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-actions {
+    flex-direction: column;
     justify-content: center;
   }
 }
@@ -286,7 +304,7 @@
    RESPONSIVO
 =========================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .about-dooh h2,
   .how-it-works h2 {
     font-size: 2.2rem;
@@ -370,7 +388,7 @@
    RESPONSIVO
 =========================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .values h2 {
     font-size: 2.2rem;
   }
@@ -543,7 +561,7 @@ button:hover {
    DESKTOP
 ================================ */
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .contact-content {
     flex-direction: row;
     justify-content: space-between;

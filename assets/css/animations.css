@@ -1,0 +1,5 @@
+/* Scroll suave como fallback */
+html {
+  scroll-behavior: smooth;
+}
+
